@@ -475,7 +475,7 @@ export async function sendTransactionAdvanced(
         );
     }
 
-    fee = config.minimumFee;
+    fee = FeeType.FixedFee(config.minimumFee);
 
 /*     if (fee === undefined) {
         fee = FeeType.MinimumFee(config);
