@@ -475,7 +475,9 @@ export async function sendTransactionAdvanced(
         );
     }
 
-    if (fee === undefined) {
+    fee = config.minimumFee;
+
+/*     if (fee === undefined) {
         fee = FeeType.MinimumFee(config);
 
         logger.log(
@@ -483,7 +485,7 @@ export async function sendTransactionAdvanced(
             LogLevel.DEBUG,
             LogCategory.TRANSACTIONS,
         );
-    }
+    } */
 
     if (paymentID === undefined) {
         paymentID = '';
