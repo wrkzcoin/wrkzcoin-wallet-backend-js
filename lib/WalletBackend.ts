@@ -2951,7 +2951,7 @@ export class WalletBackend extends EventEmitter {
         }
 
         if (txData.transactionsToAdd.length > 0) {
-            this.shouldPerformAutoOptimize = true;
+            this.shouldPerformAutoOptimize = false;
         }
     }
 
@@ -3195,8 +3195,8 @@ export class WalletBackend extends EventEmitter {
     private initAfterLoad(daemon: Daemon, config: Config): void {
         this.synced = false;
         this.started = false;
-        this.autoOptimize = true;
-        this.shouldPerformAutoOptimize = true;
+        this.autoOptimize = false;
+        this.shouldPerformAutoOptimize = false;
         this.currentlyOptimizing = false;
         this.currentlyTransacting = false;
         this.haveEmittedDeadNode = false;
