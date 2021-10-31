@@ -2184,18 +2184,18 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-"wrkzcoin-crypto@https://github.com/wrkzcoin/wrkzcoin-crypto#dev":
+"wrkzcoin-crypto@https://github.com/wrkzcoin/wrkzcoin-crypto#rebase_tx_pow":
   version "6.0.2"
-  resolved "https://github.com/wrkzcoin/wrkzcoin-crypto#02ee0f1ac524d6ed35bb84940fe34e194bf575a9"
+  resolved "https://github.com/wrkzcoin/wrkzcoin-crypto#e7677aac82a24fb8fdcb0b579cb0ecd6417ce699"
   dependencies:
     bindings "^1.5.0"
     js-sha3 "^0.8.0"
     nan "^2.14.1"
     prebuild-install "^5.3.5"
 
-"wrkzcoin-utils@https://github.com/wrkzcoin/wrkzcoin-utils#no_tx_pow":
+"wrkzcoin-utils@https://github.com/wrkzcoin/wrkzcoin-utils#dev":
   version "3.0.3"
-  resolved "https://github.com/wrkzcoin/wrkzcoin-utils#d57d6604eb8782e7509d2f55c2f12a62cf455be0"
+  resolved "https://github.com/wrkzcoin/wrkzcoin-utils#265870c882a6332d683205a0b6e445b51a2e4d1d"
   dependencies:
     "@ledgerhq/hw-transport" "^5.22.0"
     "@types/ledgerhq__hw-transport" "^4.21.2"
@@ -2210,7 +2210,7 @@ wrappy@1:
     semver "^7.3.2"
     turtlecoin-base58 "0.0.8"
     turtlecoin-mnemonics "0.0.9"
-    wrkzcoin-crypto "https://github.com/wrkzcoin/wrkzcoin-crypto#dev"
+    wrkzcoin-crypto "https://github.com/wrkzcoin/wrkzcoin-crypto#rebase_tx_pow"
   optionalDependencies:
     "@ledgerhq/hw-transport-node-hid" "^5.22.0"
 
