@@ -1,5 +1,5 @@
 import * as _ from 'lodash';
-import * as colors from 'colors';
+import colors = require('colors/safe');
 import * as fs from 'fs';
 
 import {
