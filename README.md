@@ -1,16 +1,13 @@
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
-
 #### Master Build Status
-[![Build Status](https://travis-ci.org/turtlecoin/turtlecoin-wallet-backend-js.svg?branch=master)](https://travis-ci.org/turtlecoin/turtlecoin-wallet-backend-js)
+[![Build Status](https://travis-ci.org/wrkzcoin/wrkzcoin-wallet-backend-js.svg?branch=master)](https://travis-ci.org/wrkzcoin/wrkzcoin-wallet-backend-js)
 
-#### NPM
-[![NPM](https://nodei.co/npm/turtlecoin-wallet-backend.png?compact=true)](https://npmjs.org/package/turtlecoin-wallet-backend)
+#### Package
 
 #### Github
 
-https://github.com/turtlecoin/turtlecoin-wallet-backend-js
+https://github.com/wrkzcoin/wrkzcoin-wallet-backend-js
 
-# turtlecoin-wallet-backend
+# wrkzcoin-wallet-backend
 
 Provides an interface to the WrkzCoin network, allowing wallet applications to be built.
 
@@ -20,35 +17,34 @@ Provides an interface to the WrkzCoin network, allowing wallet applications to b
 
 ## Installation
 
-NPM:
+No npm package is published yet.
 
-`npm install turtlecoin-wallet-backend --save`
+Install directly from GitHub:
 
-Yarn:
+`npm install github:wrkzcoin/wrkzcoin-wallet-backend-js --save`
 
-`yarn add turtlecoin-wallet-backend`
+or
+
+`yarn add github:wrkzcoin/wrkzcoin-wallet-backend-js`
 
 ## Documentation
 
-[You can view the documentation here](https://turtlecoin.github.io/turtlecoin-wallet-backend-js/classes/_walletbackend_.walletbackend.html)
+[You can view the documentation in this repository](./docs/index.html)
 
 You can see a list of all the other classes on the right side of the screen.
-Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('turtlecoin-wallet-backend')`.
+Note that you will need to prefix them all with `WB.` to access them, if you are not using typescript style imports, assuming you imported with `const WB = require('wrkzcoin-wallet-backend')`.
 
 ## Quick Start
 
-You can find an [example project in the examples](https://github.com/turtlecoin/turtlecoin-wallet-backend-js/tree/master/examples/example1) folder.
+You can find an [example project in the examples](./examples/example1) folder.
 
 ### Javascript
 
 ```javascript
-const WB = require('turtlecoin-wallet-backend');
+const WB = require('wrkzcoin-wallet-backend');
 
 (async () => {
-    const daemon = new WB.Daemon('127.0.0.1', 11898);
-    /* OR
-    const daemon = new WB.Daemon('blockapi.turtlepay.io', 443);
-    */
+    const daemon = new WB.Daemon('127.0.0.1', wrkzcoin-wallet-backend-js.git);
     
     const wallet = WB.WalletBackend.createWallet(daemon);
 
@@ -70,13 +66,13 @@ const WB = require('turtlecoin-wallet-backend');
 ### Typescript
 
 ```typescript
-import { WalletBackend, Daemon, IDaemon } from 'turtlecoin-wallet-backend';
+import { WalletBackend, Daemon, IDaemon } from 'wrkzcoin-wallet-backend';
 
 (async () => {
     const daemon: IDaemon = new Daemon('127.0.0.1', 11898);
 
     /* OR
-    const daemon: IDaemon = new Daemon('blockapi.turtlepay.io', 443);
+    const daemon: IDaemon = new Daemon('127.0.0.1', 11898);
     */
 
     const wallet: WalletBackend = WalletBackend.createWallet(daemon);
@@ -377,9 +373,9 @@ Start of changelog.
 
 ### Building (For Developers)
 
-`git clone https://github.com/turtlecoin/turtlecoin-wallet-backend-js.git`
+`git clone https://github.com/wrkzcoin/wrkzcoin-wallet-backend-js.git`
 
-`cd turtlecoin-wallet-backend`
+`cd wrkzcoin-wallet-backend-js`
 
 `npm install -g yarn` (Skip this if you already have yarn installed)
 

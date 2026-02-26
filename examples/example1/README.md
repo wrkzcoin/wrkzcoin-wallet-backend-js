@@ -1,9 +1,17 @@
-A simple example that opens or creates a wallet, starts syncing, then saves and closes.
+A simple example that opens or creates a WrkzCoin wallet, starts syncing, then saves and closes.
 
 ## Installation
 
-`npm install` or `yarn install`
+No npm package is published yet. From the repository root, install dependencies:
+
+`yarn install`
+
+or
+
+`npm install`
 
 ## Running
+
+From `examples/example1`:
 
 `node index.js`
