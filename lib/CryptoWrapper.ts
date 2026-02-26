@@ -6,7 +6,7 @@ import {Crypto} from 'wrkzcoin-utils';
 import {CryptoUtils} from './CnUtils';
 import {Config} from './Config';
 
-const TurtleCoinCrypto = new Crypto();
+const WrkzCoinCrypto = new Crypto();
 
 const nullKey = '0'.repeat(64);
 
@@ -20,7 +20,7 @@ export async function generateKeyDerivation(
     }
 
     try {
-        return TurtleCoinCrypto.generateKeyDerivation(
+        return WrkzCoinCrypto.generateKeyDerivation(
             transactionPublicKey,
             privateViewKey,
         );
@@ -91,7 +91,7 @@ export async function underivePublicKey(
     }
 
     try {
-        return TurtleCoinCrypto.underivePublicKey(
+        return WrkzCoinCrypto.underivePublicKey(
             derivation, outputIndex, outputKey,
         );
     } catch (err) {

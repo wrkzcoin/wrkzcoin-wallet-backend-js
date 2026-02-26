@@ -12,7 +12,7 @@ https://github.com/turtlecoin/turtlecoin-wallet-backend-js
 
 # turtlecoin-wallet-backend
 
-Provides an interface to the TurtleCoin network, allowing wallet applications to be built.
+Provides an interface to the WrkzCoin network, allowing wallet applications to be built.
 
 * Downloads blocks from the network, either through a traditional daemon, or a blockchain cache for increased speed
 * Processes blocks, decrypting transactions that belong to the user
@@ -367,7 +367,7 @@ changed. The type of the `fee` parameter for `sendTransactionAdvanced` has chang
 ### v3.0.0
 
 * Fix bug where using multiple wallet instances with different configs would only use the latest config.
-* API change - You must now provide a config to the Utilities/ValidateParameters functions if you are using a non default config, for example if you are using the library for another cryptocurrency. Otherwise, the default TurtleCoin config will be used.
+* API change - You must now provide a config to the Utilities/ValidateParameters functions if you are using a non default config, for example if you are using the library for another cryptocurrency. Otherwise, the default WrkzCoin config will be used.
 
 ### v2.0.0
 

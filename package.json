@@ -1,5 +1,5 @@
 {
-  "name": "turtlecoin-wallet-backend",
+  "name": "wrkzcoin-wallet-backend",
   "version": "6.0.0",
   "description": "",
   "main": "dist/lib/index.js",

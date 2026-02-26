@@ -240,7 +240,7 @@ export class Daemon extends EventEmitter {
      * @param host The host to access the API on. Can be an IP, or a URL, for
      *             example, 1.1.1.1, or blockapi.turtlepay.io
      *
-     * @param port The port to access the API on. Normally 11898 for a TurtleCoin
+     * @param port The port to access the API on. Normally 11898 for a WrkzCoin
      *             daemon, 80 for a HTTP api, or 443 for a HTTPS api.
      *
      * @param isCacheApi You can optionally specify whether this API is a

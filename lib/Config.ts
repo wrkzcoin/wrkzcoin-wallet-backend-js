@@ -13,14 +13,14 @@ const version = require('../../package.json').version;
  */
 export interface IConfig {
     /**
-     * The amount of decimal places your coin has, e.g. TurtleCoin has two
+     * The amount of decimal places your coin has, e.g. WrkzCoin has two
      * decimals
      */
     decimalPlaces?: number;
 
     /**
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
-     * In TurtleCoin, this converts to TRTL
+     * In WrkzCoin, this converts to TRTL
      */
     addressPrefix?: number;
 
@@ -202,14 +202,14 @@ export interface IConfig {
  */
 export class Config implements IConfig {
     /**
-     * The amount of decimal places your coin has, e.g. TurtleCoin has two
+     * The amount of decimal places your coin has, e.g. WrkzCoin has two
      * decimals
      */
     public decimalPlaces: number = 2;
 
     /**
      * The address prefix your coin uses - you can find this in CryptoNoteConfig.h.
-     * In TurtleCoin, this converts to TRTL
+     * In WrkzCoin, this converts to TRTL
      */
     public addressPrefix: number = 999730;
 
