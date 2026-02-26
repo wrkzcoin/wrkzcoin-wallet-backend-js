@@ -10,6 +10,9 @@
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
+    "useUnknownInCatchVariables": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "baseUrl": "./lib",
     "downlevelIteration": true
   }
