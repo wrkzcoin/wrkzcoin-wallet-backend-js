@@ -12,6 +12,7 @@ declare module 'wrkzcoin-crypto' {
         constructor(config?: ICryptoConfig);
 
         public static isNative: boolean;
+        public type: CryptoType;
 
         public generateKeyDerivation(
             transactionPublicKey: string,
